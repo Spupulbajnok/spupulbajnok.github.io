@@ -1,0 +1,16 @@
+body {
+    width: 300px;
+}
+.container p, .last p {   
+    margin: 0;
+    padding: 1em;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.last p {    
+    border-bottom: none;
+}
+p:hover {
+    background-color: rgb(255, 136, 0);
+}
