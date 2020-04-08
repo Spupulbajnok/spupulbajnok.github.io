@@ -1,0 +1,30 @@
+header {
+  background-color:purple;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+button {
+  background-color:cyan;
+  height: 30px;
+  border: none;
+  margin: 0px 10px;
+  width: 100px;
+  background: cyan;
+}
+#button2 {
+  width: 150px;
+}
+div {
+  height: 500px;
+  display: flex;
+  
+}
+main {
+  background-color: yellow;
+  flex-grow: 4;
+}
+aside{
+  background-color: lime;
+  flex-grow: 1;
+}

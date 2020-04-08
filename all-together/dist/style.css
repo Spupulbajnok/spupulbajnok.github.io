@@ -1,0 +1,43 @@
+.container{
+  width: 300px;
+  margin: auto;
+}
+header{
+  background-color: aqua;
+  height: 50px;
+}
+.container2 {
+  height: 300px;
+  display: flex;
+}
+aside{
+  flex-grow: 1;
+}
+.left-sidebar{
+  background-color: orange;
+}
+.right-sidebar{
+  background-color: purple;
+}
+main{
+  background-color: red;
+  display: flex;
+  /*align-items: flex-end;
+  justify-content: flex-end;*/
+  flex-grow: 2;
+  margin: 0px 10px;
+  position: relative;
+}
+#blackbox{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  /*margin: 10px;*/
+  position: absolute;
+  bottom: 10px;
+  right: 10px; 
+}
+footer {
+ background-color: blue;
+ height: 50px; 
+}

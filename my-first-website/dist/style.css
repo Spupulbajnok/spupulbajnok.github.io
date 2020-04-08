@@ -1,0 +1,130 @@
+body {
+  margin: 0; /*ne legyen fehér csík a kép fölött */
+}
+#page {
+  margin: auto;
+}
+header {
+  display: flex;
+  position: relative;
+  margin:auto;
+  width: 1280px;
+  font-family: 'Abril Fatface', cursive;
+  color: #222;
+}
+header img {
+  width: 100%;
+}
+.namecard {
+  position: absolute;
+  left: 300px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  margin: 0;
+}
+.greetings{
+  position: relative;
+  top: 20px;
+  font-size: 220%;
+}
+.name {
+   font-size: 440%;
+}
+main {
+  margin: 60px auto auto auto;
+  width: 740px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #222;
+  line-height: 1.5em;
+}
+main p {
+  font-size: 15px;
+}
+ul {
+  font-size: 15px;
+  list-style-type: square;
+  margin: 20px 0px 50px 0px;
+}
+blockquote {
+  margin: 50px 0px;
+  background-color: #444444;
+  font-family: 'Abril Fatface', cursive;
+  color: white;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  position: relative;
+  height: auto;
+}
+blockquote p {
+  margin: 0;
+  padding: 20px 0px;
+  font-size: 46px;
+  line-height: 1.4em;
+}
+blockquote::before {
+  margin: 0;
+  font-size: 150px;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  content: '„';
+  transform: rotate(180deg);
+}
+h2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 23px;
+  margin-bottom: 0;
+}
+h4 {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.2em;
+  margin: 0;
+}
+hr {
+  height: 4px;
+  background-color: black;
+  border: none;
+}
+section p, section ul {
+  font-size: 19px;
+  line-height: 1.7em;
+}
+.navigation {
+  height: 130px;
+  width: 130px;
+  background-color: #e6e6e6;
+  border-radius: 50%;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  top: 50%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#previous-page {
+  left: -97px;
+}
+#previous-page:hover {
+  background-color: gray;
+  left: -55px;
+}
+#next-page {
+  right: -97px;
+}
+#next-page:hover {
+  background-color: gray;
+  right: -55px;
+}

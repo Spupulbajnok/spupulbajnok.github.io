@@ -1,0 +1,24 @@
+h1 {
+    color: green;
+    font-family: 'Sen', sans-serif;   
+}
+h2 {
+    background-color: rgb(89, 184, 179);
+    text-align: center;
+    color: rgb(61, 61, 61);
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(235, 245, 225);
+}
+.day {
+    font-family: cursive;   
+    line-height: 1.8em;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 1em;
+}
+div a{  
+   display: block;
+   margin-left: 1em;
+}

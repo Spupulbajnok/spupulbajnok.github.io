@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+} 
+#page {
+    margin: auto; 
+}
+header {
+    margin: inherit;
+    width: 1600px;
+    height: 150px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    background-color: #222;
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-content: center; 
+    justify-content: center;
+    z-index: 1;
+}
+header a {
+    margin: auto 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+}
+.introduce {
+    background-image:url("http://stayathome-syllabus.greenfox.academy/week01/assets/first-website-header.png");
+    width: 680px;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250%;  
+    font-family: "Abril Fatface", cursive;
+    color: #222;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.hi{
+    padding-left: 150px;
+    width: 800px;
+    font-size: 50pt;
+    position: relative;
+    bottom: -160px;
+}
+.myname{
+    padding-left: 150px;   
+    margin-bottom: 0px;
+    font-size: 100pt;
+    line-height: 1em;
+}
+main {
+    margin: inherit; 
+    width: 1600px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 3em;
+    display: grid;  
+}
+main p {
+    font-size: 26pt;    
+  }
+ul {
+    font-size: 24pt;
+    list-style-type: square;
+    margin: 20px 0px 50px 0px;
+}
+blockquote {
+    margin: 50px 0px;
+    background-color: #444444;
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    padding: 5%;
+    position: relative;  
+}
+blockquote p {
+    margin: 0;  
+    font-size: 100px;
+    line-height: 1.4em;
+    width: 520px;
+}
+blockquote::before {
+    margin: 0;
+    font-size: 250px;
+    position: absolute;
+    top: 125px;
+    left: 0;
+    content: '„';
+    transform: rotate(180deg);
+}
+h2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    font-size: 3.2em;
+}
+h3 {
+    font-size: 2.9em;
+    margin-bottom: 0;
+    line-height: 1.7em;
+}
+h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+    font-style: italic;
+    line-height: 1.5em;
+    margin: 0;
+}
+#bio {
+    display: flex;   
+}
+#achievements {
+   display: flex;
+   height: 55%;   
+}
+
+#experience {
+    display: flex;
+    height: 65%;
+ }
+ #training {
+    display: flex;
+    height: 100%;
+ }
+.rightside {
+    margin-left: 40px;
+ 
+}
