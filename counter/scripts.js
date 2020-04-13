@@ -9,7 +9,9 @@ document.getElementById("inc-button").addEventListener("click", function() {
     display(counter);
 });
 document.getElementById("dec-button").addEventListener("click", function() {
-    counter--;
+    if (counter >0) {
+        counter--;    
+    }    
 //    $("#actual-number").text(count);
     display(counter);
 });
