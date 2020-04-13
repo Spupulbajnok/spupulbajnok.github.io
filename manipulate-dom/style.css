@@ -1,0 +1,15 @@
+h1{
+  color: #eb7734;
+}
+h2{
+  color: purple;
+}
+p{
+  width: 500px;
+}
+ol{
+  text-decoration: underline;
+}
+.coloredlist{
+  color: #e534eb;
+}
