@@ -28,6 +28,7 @@ let pos = 0;
 let LoadImage = (n) => {
     $("#current-image").attr("src",gallery[n].url);
     $("#title-holder").text(gallery[pos].title);
+    $("#description-holder").text(gallery[pos].description);
 }
 LoadImage(pos);
 //lapozás balra
