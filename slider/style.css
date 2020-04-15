@@ -1,5 +1,5 @@
 body {
-    margin-top: 100px;
+    margin-top: 60px;
     background-color: rgb(175, 175, 175); /* For browsers that do not support gradients */
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 50%, rgba(144,144,144,1) 100%);
      
@@ -58,7 +58,7 @@ h2 {
     font-size: small;
 }
 #thumbnail-holder {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 900px;    
@@ -66,11 +66,35 @@ h2 {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.thumbnail { 
+.tooltip { 
+  position: relative;
+  display: inline-block;
+}
+.thumbnail {
   height: 80px;
   box-shadow: 2px 3px 2px 0px rgba(130,130,130,0.8);
 }
 .thumbnail:hover {
     cursor: pointer;   
 }
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
 

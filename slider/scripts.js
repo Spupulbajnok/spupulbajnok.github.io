@@ -33,11 +33,12 @@ let pos = 0;
 //aktuális kép betöltése
 let LoadImage = (n) => {
     pos = n; //thumbnail és navigation szinkronizálása
-    ResetBorder();
+    ResetBorder(); //thumbnail képek keretének törlése
+    $("#thumb"+n).css("border", "5px solid ivory"); //keret az aktuális thumbnail-re
     $("#current-image").attr("src",gallery[n].url);
     $("#title-holder").text(gallery[n].title);
     $("#description-holder").text(gallery[n].description);
-    $("#thumb"+n).css("border", "5px solid ivory");
+    
 }
 let ResetBorder = (x) =>{
     for (let i = 0; i < gallery.length; i++) {
@@ -65,8 +66,8 @@ document.getElementById("nav-right").addEventListener("click", function() {
     }
     LoadImage(pos);   
 });
-//előnézeti képek létrehozása
+//thumbnail képek létrehozása
 gallery.forEach(thumb => {    
-    $("#thumbnail-holder").append('<img src="'+thumb.url+'" id="thumb'+thumb.thumbId+'" class="thumbnail" onclick="LoadImage('+thumb.thumbId+')">');
+    $("#thumbnail-holder").append('<div class="tooltip"><img src="'+thumb.url+'" id="thumb'+thumb.thumbId+'" class="thumbnail" onclick="LoadImage('+thumb.thumbId+')"><span class="tooltiptext">'+thumb.title+'</span></div>');
 });
 $("#thumb0").css("border", "5px solid ivory");
