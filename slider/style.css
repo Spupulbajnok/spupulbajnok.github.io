@@ -58,7 +58,7 @@ h2 {
     font-size: small;
 }
 #thumbnail-holder {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     width: 900px;    
@@ -87,7 +87,7 @@ h2 {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 125%;
+    bottom: 110%;
     left: 50%;
     margin-left: -60px;
     opacity: 0;
